@@ -15,11 +15,7 @@ class ErrorPage extends StatelessWidget {
               children: [
                 Transform.translate(
                   offset: const Offset(0, -30),
-                  child: Image.asset(
-                    'assets/red.png',
-                    width: 120,
-                    height: 120,
-                  ),
+                  child: Image.asset('assets/red.png', width: 120, height: 120),
                 ),
                 const SizedBox(height: 5),
                 const Text(
@@ -37,19 +33,22 @@ class ErrorPage extends StatelessWidget {
           Align(
             alignment: Alignment.bottomCenter,
             child: Padding(
-              padding: const EdgeInsets.only(bottom: 40.0, left: 40.0, right: 40.0),
+              padding: const EdgeInsets.only(
+                bottom: 40.0,
+                left: 40.0,
+                right: 40.0,
+              ),
               child: SizedBox(
                 width: double.infinity,
-                height: 50,
+                height: 47,
                 child: ElevatedButton(
                   onPressed: () {
                     Navigator.pop(context);
-                    
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: const Color(0xFFEA4335),
                     shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10),
+                      borderRadius: BorderRadius.circular(14),
                     ),
                     elevation: 5,
                   ),
@@ -57,7 +56,7 @@ class ErrorPage extends StatelessWidget {
                     'Try again',
                     style: TextStyle(
                       color: Colors.white,
-                      fontSize: 18,
+                      fontSize: 21,
                       fontWeight: FontWeight.bold,
                       fontFamily: 'Arial',
                     ),

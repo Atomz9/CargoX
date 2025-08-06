@@ -1,4 +1,4 @@
-import 'package:cargox/pages/Finding.dart';
+import 'package:cargox/pages/finding.dart';
 import 'package:flutter/material.dart';
 
 class Firstpage extends StatelessWidget {
@@ -12,7 +12,7 @@ class Firstpage extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 30.0),
         child: Column(
           children: [
-            const SizedBox(height: 170),
+            const SizedBox(height: 225),
 
             Center(
               child: Image.asset(
@@ -23,7 +23,7 @@ class Firstpage extends StatelessWidget {
               ),
             ),
 
-            const SizedBox(height: 40),
+            const SizedBox(height: 30),
 
             const Center(
               child: Text.rich(
@@ -36,19 +36,19 @@ class Firstpage extends StatelessWidget {
                   children: [
                     TextSpan(
                       text: 'Automate ',
-                      style: TextStyle(color: Color(0xFF8B5CF6)),
+                      style: TextStyle(color: Color.fromARGB(255, 84, 53, 146)),
                     ),
                     TextSpan(
                       text: 'the Load,\n',
-                      style: TextStyle(color: Colors.black),
+                      style: TextStyle(color: Color(0xFF75A7FA)),
                     ),
                     TextSpan(
                       text: 'Accelerate ',
-                      style: TextStyle(color: Color(0xFF8B5CF6)),
+                      style: TextStyle(color: Color.fromARGB(255, 84, 53, 146)),
                     ),
                     TextSpan(
                       text: 'the Flow',
-                      style: TextStyle(color: Colors.black),
+                      style: TextStyle(color: Color(0xFF75A7FA)),
                     ),
                   ],
                 ),
@@ -73,14 +73,14 @@ class Firstpage extends StatelessWidget {
                 style: ElevatedButton.styleFrom(
                   backgroundColor: const Color(0xFF75A7FA),
                   foregroundColor: Colors.white,
-                  padding: const EdgeInsets.symmetric(vertical: 25),
+                  padding: const EdgeInsets.symmetric(vertical: 21),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(12),
                   ),
                 ),
                 child: const Text(
                   'Next',
-                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                  style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
                 ),
               ),
             ),

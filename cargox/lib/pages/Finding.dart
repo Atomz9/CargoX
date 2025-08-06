@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'dart:math'; 
 
+
+
+
 import 'success_page.dart'; 
 import 'error_page.dart'; 
 
@@ -12,7 +15,7 @@ class LoadingPage extends StatefulWidget {
 }
 
 class _LoadingPageState extends State<LoadingPage>
-    with SingleTickerProviderStateMixin {
+     with SingleTickerProviderStateMixin {
   late AnimationController _controller;
   late Animation<double> _animation1;
   late Animation<double> _animation2;
@@ -59,7 +62,7 @@ class _LoadingPageState extends State<LoadingPage>
     
     _navigateToNextPage();
   }
-
+//simulated scanning stuff
   void _navigateToNextPage() async {
     await Future.delayed(const Duration(seconds: 3)); 
      //part นี้ 50 % random t/f ว้่าไปหน้าไหน ไปเขียน ble เอง :D
@@ -97,8 +100,8 @@ class _LoadingPageState extends State<LoadingPage>
         );
       },
       child: Container(
-        width: 10,
-        height: 10,
+        width: 20,
+        height: 20,
         margin: const EdgeInsets.symmetric(horizontal: 6),
         decoration: const BoxDecoration(
           color: Color(0xFF0A0A40),
@@ -130,8 +133,8 @@ class _LoadingPageState extends State<LoadingPage>
             const Text.rich(
               TextSpan(
                 style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.w700,
+                  fontSize: 27,
+                  fontWeight: FontWeight.w600,
                   fontFamily: 'Arial',
                 ),
                 children: [
@@ -141,7 +144,7 @@ class _LoadingPageState extends State<LoadingPage>
                   ),
                   TextSpan(
                     text: 'CargoX',
-                    style: TextStyle(color: Color(0xFF0A0A40)),
+                    style: TextStyle(color: Color.fromARGB(255, 21, 60, 138)),
                   ),
                 ],
               ),
